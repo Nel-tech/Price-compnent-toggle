@@ -13,8 +13,8 @@ body {
   height: 500px;
   background-image: url(/public/images/bg-top.svg),
     url(/public/images/bg-bottom.svg);
-  background-position: right bottom 800px, bottom 100px left;
-  background-size: contain, 300px;
+  background-position: right, left bottom;
+  background-size: contain, 400px;
   background-repeat: no-repeat;
 }
 
@@ -89,7 +89,117 @@ input:checked + .slider:before {
   font-size: 18px;
   padding-top: 1rem;
 }
+
 .header-container h2 {
   font-size: 15px;
   color: hsl(234, 14%, 74%);
+}
+.pricing-container {
+  margin-top: -30rem;
+  display: flex;
+  /* position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); */
+  padding-top: 10rem;
+  gap: 1rem;
+  text-align: center;
+}
+.componenet1,
+.componenet2,
+.componenet3 {
+  line-height: 70px;
+}
+.line {
+  width: 100%;
+  background-color: hsl(240, 78%, 98%);
+  height: 0.0625rem;
+}
+.componenet1,
+.componenet3 {
+  background-color: white;
+  width: 25%;
+  height: 460px;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.componenet1 h1,
+.componenet3 h1 {
+  font-size: 20px;
+  font-weight: bolder;
+  color: hsl(232, 13%, 33%);
+}
+.componenet1 h2,
+.componenet3 h2 {
+  font-size: 40px;
+  font-weight: bolder;
+  color: hsl(232, 13%, 33%);
+}
+.componenet1 p,
+.componenet3 p {
+  font-weight: 500;
+  color: hsl(232, 13%, 33%);
+}
+.componenet1 button,
+.componenet3 button {
+  text-align: center;
+
+  padding: 0.6rem 8rem;
+  cursor: pointer;
+  border-radius: 5px;
+  background-image: linear-gradient(
+    to right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+  border: none;
+  color: white;
+  font-size: 12px;
+}
+.componenet1 button:hover,
+.componenet3 button:hover {
+  background-image: linear-gradient(to right, white, white);
+  border: 1px solid hsl(237, 63%, 64%);
+  color: hsl(237, 63%, 64%);
+}
+
+.componenet2 {
+  background-color: hsl(237, 63%, 64%);
+  width: 25%;
+  height: 480px;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  color: white;
+}
+.componenet2 h1 {
+  font-size: 20px;
+  font-weight: bolder;
+}
+.componenet2 h2 {
+  font-size: 40px;
+  font-weight: bolder;
+}
+.componenet2 .line {
+  background-color: hsl(236, 72%, 79%);
+}
+.componenet2 button {
+  text-align: center;
+
+  padding: 0.8rem 6rem;
+  cursor: pointer;
+  border-radius: 5px;
+  background-image: linear-gradient(to right, white, white);
+  border: none;
+  color: hsl(237, 63%, 64%);
+  font-size: 12px;
+}
+.componenet2 button:hover {
+  border: 1px solid white;
+  color: white;
+  background-image: linear-gradient(
+    to right,
+    hsl(237, 63%, 64%),
+    hsl(237, 63%, 64%)
+  );
 }
